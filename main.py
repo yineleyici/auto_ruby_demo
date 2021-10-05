@@ -11,7 +11,7 @@ import os
 
 
 def index():
-    put_markdown('# 自動ルビ挿入デモ\n* ふりがなの無いテキストファイルに、自動でふりがなを付与する試みです。\n* ファイルは保存しないので、私に内容を知られることはありません。\n* 自動なのでわりと間違えます。自己責任でお使いください。')
+    put_markdown('# 自動ルビ挿入デモ\n* ふりがなの無いテキストファイルに、自動でふりがなを付与する試みです。\n* ファイルは保存しないので私に内容を知られることはありません。\n* 自動なのでわりと間違えます。自己責任でお使いください。')
     main()
 
 
@@ -19,7 +19,7 @@ def main():
     # 検索画像を入力
     inputFile = file_upload(accept=['.txt'],
                            max_size='3M',
-                           placeholder='テキストファイルをアップロード',
+                           placeholder='テキストファイルをアップロードしてください',
                            required=True)
     text = inputFile['content'].decode(encoding='utf-8')
 
